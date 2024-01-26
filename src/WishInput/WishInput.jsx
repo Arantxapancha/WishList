@@ -6,7 +6,7 @@ export default function WishInput({ onNewWish }) {
   const [newWish, setNewWish] = useState('');
 
   const handleKeyUp = (e) => {
-    if (e.key === 'Enter' && newWish.length) { // en vez del .length se puede poner newWish !== ' '
+    if (e.key === 'Enter' && newWish.length > 0) { // en vez del .length se puede poner newWish !== ' '
       const newWishObject = {
         id: Date.now(),
         text: newWish,

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-import WishInput from '../WishInput/WishInput';
 import WishList from '../WishList/WishList';
+import WishInput from '../WishInput/WishInput';
 
 const initialWishes = [
   {
