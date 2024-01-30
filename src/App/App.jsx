@@ -28,11 +28,12 @@ export default function App() {
   const onNewWish = (newWish) => {
     setWishes((currentWishes) => [...currentWishes, newWish]);
   };
+
   return (
     <div className="app">
       <h1>My wishlist</h1>
       <WishInput onNewWish={onNewWish} />
-      <WishList wishes={wishes} />
+      <WishList wishes={wishes} setWishes={setWishes} />
     </div>
   );
 }
