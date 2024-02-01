@@ -34,6 +34,7 @@ export default function App() {
       <h1>My wishlist</h1>
       <WishInput onNewWish={onNewWish} />
       <WishList wishes={wishes} setWishes={setWishes} />
+      <button type="button" className="wish-clear" onClick={() => setWishes(wishes.filter((wish) => !wish.completed))}>Archive Wishes</button>
     </div>
   );
 }
